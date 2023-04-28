@@ -27,6 +27,5 @@ server.listen({port:3000,host:"127.0.0.1"}, (err, address) => {
         socket.on("disconnect", () => {
             console.log("Client disconnected");
         });
-        
     });
 });
