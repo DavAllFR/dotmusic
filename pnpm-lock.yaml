@@ -7,6 +7,9 @@ dependencies:
   fastify:
     specifier: ^4.15.0
     version: 4.15.0
+  fastify-socket.io:
+    specifier: ^4.0.0
+    version: 4.0.0(socket.io@4.6.1)
   socket.io:
     specifier: ^4.6.1
     version: 4.6.1
@@ -358,8 +361,21 @@ packages:
     resolution: {integrity: sha512-cIusKBIt/R/oI6z/1nyfe2FvGKVTohVRfvkOhvx0nCEW+xf5NoCXjAHcWp93uOUBchzYcsvPlrapAdX1uW+YGg==}
     dev: false
 
+  /fastify-plugin@3.0.1:
+    resolution: {integrity: sha512-qKcDXmuZadJqdTm6vlCqioEbyewF60b/0LOFCcYN1B6BIZGlYJumWWOYs70SFYLDAH4YqdE1cxH/RKMG7rFxgA==}
+    dev: false
+
   /fastify-plugin@4.5.0:
     resolution: {integrity: sha512-79ak0JxddO0utAXAQ5ccKhvs6vX2MGyHHMMsmZkBANrq3hXc1CHzvNPHOcvTsVMEPl5I+NT+RO4YKMGehOfSIg==}
+    dev: false
+
+  /fastify-socket.io@4.0.0(socket.io@4.6.1):
+    resolution: {integrity: sha512-j5mgvHZpQ0Iiz9HyKwGdLOQGjFKH/6KOwx8esxCIBkIjtiQkdC8e4J1xX4JAMISLfTJOY9EHQG/1MmU/9cXaog==}
+    peerDependencies:
+      socket.io: ^4.4.0
+    dependencies:
+      fastify-plugin: 3.0.1
+      socket.io: 4.6.1
     dev: false
 
   /fastify@4.15.0:
